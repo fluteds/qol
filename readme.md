@@ -1,6 +1,6 @@
-# Quality of Life Minecraft Recipes
+# Quality of Life Minecraft
 
-A Datapack of custom recipes just for quality of life.
+A Datapack of custom recipes and some tweaks to drops just for quality of life.
 
 Supports Minecraft versions 1.16+
 
@@ -21,6 +21,7 @@ Note: This is not a complete list of recipes.
 - Slabs to Blocks
 - Stairs to Blocks
 - Glass Panes to Glass Blocks
+- Shulkers always drop two shells
 
 ## How to Install
 
