@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:spruce_stairs"
+            "item": "minecraft:spruce_stairs"
         }
     },
     "result": {
-        "item": "minecraft:spruce",
+        "item": "minecraft:spruce_planks",
         "count": 6
     }
 }

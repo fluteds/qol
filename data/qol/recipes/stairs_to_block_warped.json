@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:warped_stairs"
+            "item": "minecraft:warped_stairs"
         }
     },
     "result": {
-        "item": "minecraft:warped",
+        "item": "minecraft:warped_planks",
         "count": 6
     }
 }

@@ -6,7 +6,7 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:smooth_sandstone_stairs"
+            "item": "minecraft:smooth_sandstone_stairs"
         }
     },
     "result": {

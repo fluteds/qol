@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:birch_stairs"
+            "item": "minecraft:birch_stairs"
         }
     },
     "result": {
-        "item": "minecraft:birch",
+        "item": "minecraft:birch_planks",
         "count": 6
     }
 }

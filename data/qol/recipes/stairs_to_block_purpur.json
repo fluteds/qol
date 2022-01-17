@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:purpur_stairs"
+            "item": "minecraft:purpur_stairs"
         }
     },
     "result": {
-        "item": "minecraft:purpur",
+        "item": "minecraft:purpur_block",
         "count": 6
     }
 }

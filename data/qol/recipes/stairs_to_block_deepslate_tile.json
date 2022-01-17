@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:deepslate_tile_stairs"
+            "item": "minecraft:deepslate_tile_stairs"
         }
     },
     "result": {
-        "item": "minecraft:deepslate_tile",
+        "item": "minecraft:deepslate_tiles",
         "count": 6
     }
 }
