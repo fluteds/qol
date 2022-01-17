@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:deepslate_tile_stairs"
+        }
+    },
+    "result": {
+        "item": "minecraft:deepslate_tile",
+        "count": 6
+    }
+}
