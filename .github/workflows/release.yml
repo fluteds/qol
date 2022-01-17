@@ -1,0 +1,54 @@
+name: Build & Release
+
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      # Format datetime to 'vd.m.Y'
+      - name: Set Env
+        run: echo "::set-env name=NOW::$(date +'v%d.%m.%Y')"
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+          
+      # Check if tag already exists in current day. If so, it will 
+      # Delete the current tag and replace with the new one
+      # Check if tag already exists
+      - name: Check Tag
+        uses: mukunku/tag-exists-action@v1.0.0
+        id: checkTag
+        with: 
+          tag: ${{ env.NOW }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Delete tag if exists
+      - name: Delete Dupe Tag
+        uses: dev-drprasad/delete-tag-and-release@v0.2.0
+        if: ${{ steps.checkTag.outputs.exists }}
+        with:
+          delete_release: true # default: false
+          tag_name: ${{ env.NOW }} # tag name to delete
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Zip files
+      - name: Zip Files & Create Artifacts
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: 'datapack.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig readme.md .github/*'
+
+      # Create Release
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "datapack.zip"
+          generateReleaseNotes: true
+          artifactErrorsFailBuild: true
+          owner: fluteds
+          tag: ${{ env.NOW }}
+          token: ${{ secrets.GITHUB_TOKEN }}
