@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:acacia_stairs"
+            "item": "minecraft:acacia_stairs"
         }
     },
     "result": {
-        "item": "minecraft:acacia",
+        "item": "minecraft:acacia_planks",
         "count": 6
     }
 }

@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:crimson_stairs"
+            "item": "minecraft:crimson_stairs"
         }
     },
     "result": {
-        "item": "minecraft:crimson",
+        "item": "minecraft:crimson_planks",
         "count": 6
     }
 }

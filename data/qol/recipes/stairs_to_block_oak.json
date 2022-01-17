@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:oak_stairs"
+            "item": "minecraft:oak_stairs"
         }
     },
     "result": {
-        "item": "minecraft:oak",
+        "item": "minecraft:oak_planks",
         "count": 6
     }
 }

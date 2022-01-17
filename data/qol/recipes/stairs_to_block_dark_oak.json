@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:dark_oak_stairs"
+            "item": "minecraft:dark_oak_stairs"
         }
     },
     "result": {
-        "item": "minecraft:dark_oak",
+        "item": "minecraft:dark_oak_planks",
         "count": 6
     }
 }
