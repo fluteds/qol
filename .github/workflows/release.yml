@@ -40,7 +40,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           filename: 'datapack.zip'
-          exclusions: '*.git* /*node_modules/* .editorconfig readme.md .github/*'
+          exclusions: '*.git* .gitignore .editorconfig readme.md .github/*'
 
       # Create Release
       - name: Create Release
@@ -49,6 +49,5 @@ jobs:
           artifacts: "datapack.zip"
           generateReleaseNotes: true
           artifactErrorsFailBuild: true
-          owner: fluteds
           tag: ${{ env.NOW }}
           token: ${{ secrets.GITHUB_TOKEN }}
