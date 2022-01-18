@@ -24,6 +24,7 @@ Note: This is not a complete list of recipes
 - Stairs to Blocks
 - Glass Panes to Glass Blocks
 - Shulkers always drop two shells
+- Use a Stonecutter to convert Crying Obsidian to Obsidian
 
 ## How to Install
 
