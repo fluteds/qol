@@ -49,5 +49,8 @@ jobs:
           artifacts: "datapack.zip"
           generateReleaseNotes: true
           artifactErrorsFailBuild: true
+          bodyFile: ".github/workflows/body.md"
+          name: "Latest Release"
           tag: ${{ env.NOW }}
           token: ${{ secrets.GITHUB_TOKEN }}
+
