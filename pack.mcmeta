@@ -1,6 +1,6 @@
 {
     "pack": {
-        "pack_format": 8 ,
-        "description": "Quality of Life recipes for Minecraft 1.18+"
+        "pack_format": 10 ,
+        "description": "Quality of Life recipes for Minecraft 1.19+"
     }
-} 
+}   

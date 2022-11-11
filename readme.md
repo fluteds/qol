@@ -2,7 +2,7 @@
 
 A Datapack of custom recipes and some tweaks to drops just for quality of life
 
-Supports Minecraft versions 1.16-1.18
+Supports Minecraft versions 1.19+
 
 ## Table of Contents
 
